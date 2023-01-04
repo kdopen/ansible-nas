@@ -8,7 +8,7 @@
 
 
 [all]
-ansible-nas-test ansible_connection=local ansible_host=localhost
+ansible-nas-test ansible_connection=ssh ansible_host=192.168.56.5
 
 [nas]
 ansible-nas-test
