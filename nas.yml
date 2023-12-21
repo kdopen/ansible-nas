@@ -47,6 +47,15 @@
         - ansible-nas
 
     ###
+    ### Stacks
+    ###
+
+    - role: logging
+      tags:
+        - logging
+
+
+    ###
     ### Applications
     ###
     - role: airsonic
@@ -88,6 +97,10 @@
     - role: dashy
       tags:
         - dashy
+
+    - role: ddns_updater
+      tags:
+        - ddns_updater
 
     - role: deluge
       tags:
@@ -193,6 +206,10 @@
       tags:
         - lidarr
 
+    - role: loki
+      tags:
+        - loki
+
     - role: mealie
       tags:
         - mealie
@@ -208,6 +225,10 @@
     - role: miniflux
       tags:
         - miniflux
+
+    - role: minio
+      tags:
+        - minio
 
     - role: mosquitto
       tags:
@@ -292,6 +313,10 @@
     - role: prowlarr
       tags:
         - prowlarr
+
+    - role: promtail
+      tags:
+        - promtail
 
     - role: pyload
       tags:
